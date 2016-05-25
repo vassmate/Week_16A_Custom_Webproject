@@ -7,7 +7,7 @@ h1, h2 {
     font-family: "Lato", sans-serif;
 }
 
-a:link, a:visited, input#submitButton {
+a:link, a:visited, input#submitButton{
     background-color: #ffffff;
     font-family: "Lato", sans-serif;
     color: #000000;
@@ -29,6 +29,11 @@ input#submitButton:active {
     top: 2px;
 }
 
+input#submitButton:disabled {
+    color: #000000;
+    background-color: #808080;
+}
+
 hr {
     border: 0;
     height: 1px;
@@ -43,6 +48,10 @@ hr {
     font-family: "Lato", sans-serif;
     justify-content: center;
     display: flex;
+}
+
+.contact_name {
+    padding-bottom: 10px;
 }
 
 .contact_email {
