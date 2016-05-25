@@ -71,3 +71,7 @@ label {
 textarea#message{
     resize: none;
 }
+
+span{
+    font-size: x-small;
+}
