@@ -1,31 +1,55 @@
-header{
-  text-align: center;
+header {
+    text-align: center;
 }
 
-h1, h2{
-  font-weight: 100;
-  font-family: "Lato", sans-serif;
+h1, h2 {
+    font-weight: 100;
+    font-family: "Lato", sans-serif;
 }
 
-a:link, a:visited{
-  background-color: #ffffff;
-  font-family: "Lato", sans-serif;
-  color: #000000;
-  padding: 5px 15px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border: 1px solid #000000;
-  border-radius: 2px;
+a:link, a:visited {
+    background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid #000000;
+    border-radius: 2px;
 }
 
-a:hover, a:active{
-  background-color: #000000;
-  color: #ffffff;
+a:hover, a:active {
+    background-color: #000000;
+    color: #ffffff;
 }
 
-hr{
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.content {
+    text-align: center;
+}
+
+.contact {
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+    display: flex;
+}
+
+.contact_email {
+    padding-bottom: 10px;
+}
+
+.contact_btn {
+    padding-top: 10px;
+    float: right;
+}
+
+label {
+    display: block;
+    padding-bottom: 10px;
 }
