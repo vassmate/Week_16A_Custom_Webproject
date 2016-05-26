@@ -11,14 +11,25 @@
 
     var showWarning = function (divName) {
         var span = document.createElement("span");
-        span.setAttribute("id", "span" + divName.id);
-        var node = document.createTextNode("Not valid input!");
-        span.appendChild(node);
+        span.setAttribute("id", "span_" + divName.id);
+        var warningMsg;
+
+        if (divName.id == "contact_name") {
+            warningMsg = document.createTextNode("*Name should be at least 3 characters long but not longer than 30!");
+        }
+        if (divName.id == "contact_email") {
+            warningMsg = document.createTextNode("*Email should end with either '.hu' or '.com'!");
+        }
+        if (divName.id == "contact_msg") {
+            warningMsg = document.createTextNode("*Message should be at least 20 characters long but not longer than 500!");
+        }
+
+        span.appendChild(warningMsg);
         divName.appendChild(span);
     };
 
     var removeWarning = function (divName) {
-        var span = document.getElementById("span" + divName.id);
+        var span = document.getElementById("span_" + divName.id);
         if (span != null) {
             divName.removeChild(span);
         }
@@ -26,8 +37,8 @@
 
     var validateContactData = function () {
         var emailLength = email.value.length;
-        var emailHu = email.value.substring((emailLength - 3), emailLength);
-        var emailCom = email.value.substring((emailLength - 4), emailLength);
+        var emailEndingHu = email.value.substring((emailLength - 3), emailLength);
+        var emailEndingCom = email.value.substring((emailLength - 4), emailLength);
         var isValidInputs = true;
 
         removeWarning(nameDiv);
@@ -38,7 +49,7 @@
             showWarning(nameDiv);
             isValidInputs = false;
         }
-        if (email.value.trim() === "" || emailHu != ".hu" && emailCom != ".com") {
+        if (email.value.trim() === "" || emailEndingHu != ".hu" && emailEndingCom != ".com") {
             showWarning(emailDiv);
             isValidInputs = false;
         }
