@@ -2,14 +2,20 @@ header {
     text-align: center;
 }
 
+body {
+    background-color: #d2691e;
+}
+
 h1, h2 {
-    font-weight: 100;
+    letter-spacing: 10px;
+    font-weight: 500;
     font-family: "Lato", sans-serif;
 }
 
 a:link, a:visited, input#submitButton {
-    background-color: #ffffff;
+    background-color: #ffe506;
     font-family: "Lato", sans-serif;
+    letter-spacing: 2px;
     color: #000000;
     padding: 5px 15px;
     text-align: center;
@@ -20,8 +26,8 @@ a:link, a:visited, input#submitButton {
 }
 
 a:hover, a:active, input#submitButton:hover {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #A6FF4D;
+    color: #000000;
 }
 
 input#submitButton:active {
@@ -30,8 +36,8 @@ input#submitButton:active {
 }
 
 input#submitButton:disabled {
-    color: #000000;
-    background-color: #808080;
+    color: #4b4b4b;
+    background-color: #d2691e;
 }
 
 hr {
@@ -42,8 +48,20 @@ hr {
 
 .contact {
     font-family: "Lato", sans-serif;
+    letter-spacing: 2px;
     justify-content: center;
     display: flex;
+}
+
+input[type="text"], textarea {
+    background-color: #A6FF4D;
+    border: 1px dashed #d2691e;
+    border-radius: 2px;
+}
+
+::-webkit-input-placeholder {
+    color: #4b4b4b;
+    letter-spacing: 2px;
 }
 
 .contact_name {
@@ -70,12 +88,12 @@ textarea#message {
 
 span#span_contact_name, span#span_contact_email, span#span_contact_msg {
     font-size: x-small;
-    color: #ff0000;
+    color: #000000;
     display: block;
     padding-top: 5px;
 }
 
-.content {
+.content, .subpage_content {
     font-family: "Lato", sans-serif;
     justify-content: center;
     display: flex;
@@ -89,13 +107,12 @@ img#profile_pic {
     float: right;
     margin: 0 0 1em 1em;
     border-radius: 5px;
-    border: solid 1px #808080;
 }
 
-.profile_introduction {
+.profile_introduction, .subpage_description {
     display: block;
-}
-
-code {
-    display: block;
+    background-color: #A6FF4D;
+    border-radius: 5px;
+    border: 1px dashed #d2691e;
+    letter-spacing: 2px;
 }
