@@ -54,7 +54,7 @@ hr {
 }
 
 input[type="text"], textarea {
-    background-color: #A6FF4D;
+    background-color: #ffe506;
     border: 1px dashed #d2691e;
     border-radius: 2px;
 }
@@ -111,7 +111,7 @@ img#profile_pic {
 
 .profile_introduction, .subpage_description {
     display: block;
-    background-color: #A6FF4D;
+    background-color: #ffe506;
     border-radius: 5px;
     border: 1px dashed #d2691e;
     letter-spacing: 2px;
